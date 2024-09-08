@@ -1,6 +1,50 @@
 import React from 'react';
 import {FormattedMessage} from 'react-intl';
 
+import jdcodeIconURL from './jdcode/jdcode.png';
+import jdcodeInsetIconURL from './jdcode/jdcode-small.png';
+import jdcodeConnectionIconURL from './jdcode/jdcode-illustration.png';
+import jdcodeConnectionSmallIconURL from './jdcode/jdcode-small.png';
+
+import robodogIconURL from './robodog/robodog.png';
+import robodogInsetIconURL from './robodog/robodog-small.png';
+import robodogConnectionIconURL from './robodog/robodog-illustration.png';
+import robodogConnectionSmallIconURL from './robodog/robodog-small.png';
+
+import jcboardIconURL from './jcboard/jcboard.png';
+import jcboardInsetIconURL from './jcboard/jcboard-small.png';
+import jcboardConnectionIconURL from './jcboard/jcboard-illustration.png';
+import jcboardConnectionSmallIconURL from './jcboard/jcboard-small.png';
+
+import uglybotIconURL from './uglybot/uglybot.png';
+import uglybotInsetIconURL from './uglybot/uglybot-small.png';
+import uglybotConnectionIconURL from './uglybot/uglybot-illustration.png';
+import uglybotConnectionSmallIconURL from './uglybot/uglybot-small.png';
+
+import firmtechIconURL from './firmtech/firmtech.png';
+import firmtechInsetIconURL from './firmtech/firmtech-small.png';
+import firmtechConnectionIconURL from './firmtech/firmtech-illustration.png';
+import firmtechConnectionSmallIconURL from './firmtech/firmtech-small.png';
+
+import aidroneIconURL from './aidrone/aidrone.png';
+import aidroneInsetIconURL from './aidrone/aidrone-small.png';
+import aidroneConnectionIconURL from './aidrone/aidrone-illustration.png';
+import aidroneConnectionSmallIconURL from './aidrone/aidrone-small.png';
+
+import aicobotIconURL from './aicobot/aicobot.png';
+import aicobotInsetIconURL from './aicobot/aicobot-small.png';
+import aicobotConnectionIconURL from './aicobot/aicobot-illustration.png';
+import aicobotConnectionSmallIconURL from './aicobot/aicobot-small.png';
+
+import tm2scratchIconURL from './tm2scratch/tm2scratch.png';
+import tm2scratchInsetIconURL from './tm2scratch/tm2scratch-small.png';
+
+import facemesh2scratchIconURL from './facemesh2scratch/facemesh2scratch.png';
+import facemesh2scratchInsetIconURL from './facemesh2scratch/facemesh2scratch-small.png';
+
+import posenet2scratchIconURL from './posenet2scratch/posenet2scratch.png';
+import posenet2scratchInsetIconURL from './posenet2scratch/posenet2scratch-small.png';
+
 import musicIconURL from './music/music.png';
 import musicInsetIconURL from './music/music-small.svg';
 
@@ -46,7 +90,278 @@ import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
+
 export default [
+
+	{
+        name: 'JDCode',
+        extensionId: 'jdcode',
+        collaborator: 'Junilab Inc.',
+        iconURL: jdcodeIconURL,
+        insetIconURL: jdcodeInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="JDCode Drone with Scratch 3.0"
+                description="Description for the 'jdcode' extension"
+                id="gui.extension.jdcode.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: true,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: true,
+        useAutoScan: false,
+        connectionIconURL: jdcodeConnectionIconURL,
+        connectionSmallIconURL: jdcodeConnectionSmallIconURL,
+        connectingMessage: (
+            <FormattedMessage
+                defaultMessage="Connecting"
+                description="Message to help people connect to their JDCode."
+                id="gui.extension.jdcode.connectingMessage"
+            />
+        ),
+        helpLink: 'http://www.junilab.co.kr/sub/jdkit.php'
+    },
+    {
+        name: 'JCBoard',
+        extensionId: 'jcboard',
+        collaborator: 'Junilab Inc.',
+        iconURL: jcboardIconURL,
+        insetIconURL: jcboardInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="JCBoard with Scratch 3.0"
+                description="Description for the 'jcboard' extension"
+                id="gui.extension.jcboard.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: true,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: true,
+        useAutoScan: false,
+        connectionIconURL: jcboardConnectionIconURL,
+        connectionSmallIconURL: jcboardConnectionSmallIconURL,
+        connectingMessage: (
+            <FormattedMessage
+                defaultMessage="Connecting"
+                description="Message to help people connect to their JCBoard."
+                id="gui.extension.jcboard.connectingMessage"
+            />
+        ),
+        helpLink: 'http://www.junilab.co.kr/sub/jcboard.php'
+    },
+	
+    {
+        name: 'UglyBot',
+        extensionId: 'uglybot',
+        collaborator: 'Junilab Inc.',
+        iconURL: uglybotIconURL,
+        insetIconURL: uglybotInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="UglyBot with Scratch 3.0"
+                description="Description for the 'uglybot' extension"
+                id="gui.extension.uglybot.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: true,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: true,
+        useAutoScan: false,
+        connectionIconURL: uglybotConnectionIconURL,
+        connectionSmallIconURL: uglybotConnectionSmallIconURL,
+        connectingMessage: (
+            <FormattedMessage
+                defaultMessage="Connecting"
+                description="Message to help people connect to their uglybot."
+                id="gui.extension.uglybot.connectingMessage"
+            />
+        ),
+        helpLink: 'http://www.junilab.co.kr/sub/uglybot.php'
+    },
+    {
+        name: 'Robodog',
+        extensionId: 'robodog',
+        collaborator: 'Junilab Inc.',
+        iconURL: robodogIconURL,
+        insetIconURL: robodogInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="RoboDog with Scratch 3.0"
+                description="Description for the 'RoboDog' extension"
+                id="gui.extension.robodog.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: true,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: true,
+        useAutoScan: false,
+        connectionIconURL: robodogConnectionIconURL,
+        connectionSmallIconURL: robodogConnectionSmallIconURL,
+        connectingMessage: (
+            <FormattedMessage
+                defaultMessage="Connecting"
+                description="Message to help people connect to their RoboDog."
+                id="gui.extension.robodog.connectingMessage"
+            />
+        ),
+        helpLink: 'http://jcblock.co.kr'
+    },
+   /*
+    {
+        name: 'Firmtech Drone2',
+        extensionId: 'firmtech',
+        collaborator: 'www.codingkit.co.kr',
+        iconURL: firmtechIconURL,
+        insetIconURL: firmtechInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Firmtech Drone2 with Scratch 3.0"
+                description="Description for the 'firmtech drone2' extension"
+                id="gui.extension.firmtech.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: true,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: true,
+        useAutoScan: false,
+        connectionIconURL: firmtechConnectionIconURL,
+        connectionSmallIconURL: firmtechConnectionSmallIconURL,
+        connectingMessage: (
+            <FormattedMessage
+                defaultMessage="Connecting"
+                description="Message to help people connect to their Firmtech Drone2."
+                id="gui.extension.firmtech.connectingMessage"
+            />
+        ),
+        helpLink: 'http://www.codingkit.co.kr'
+    },
+   
+    {
+        name: 'AIDrone',
+        extensionId: 'aidrone',
+        collaborator: 'ir-brain',
+        iconURL: aidroneIconURL,
+        insetIconURL: aidroneInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="AI Drone with Scratch 3.0"
+                description="Description for the 'aidrone' extension"
+                id="gui.extension.aidrone.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: true,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: true,
+        useAutoScan: false,
+        connectionIconURL: aidroneConnectionIconURL,
+        connectionSmallIconURL: aidroneConnectionSmallIconURL,
+        connectingMessage: (
+            <FormattedMessage
+                defaultMessage="Connecting"
+                description="Message to help people connect to their AI Drone."
+                id="gui.extension.aidrone.connectingMessage"
+            />
+        ),
+        helpLink: 'http://www.ir-brain.com/'
+    },
+	
+    {
+        name: 'AICoBot',
+        extensionId: 'aicobot',
+        collaborator: 'K-EdTech',
+        iconURL: aicobotIconURL,
+        insetIconURL: aicobotInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="AICoBot with Scratch 3.0"
+                description="Description for the 'aicobot' extension"
+                id="gui.extension.aicobot.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: true,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: true,
+        useAutoScan: false,
+        connectionIconURL: aicobotConnectionIconURL,
+        connectionSmallIconURL: aicobotConnectionSmallIconURL,
+        connectingMessage: (
+            <FormattedMessage
+                defaultMessage="Connecting"
+                description="Message to help people connect to their AICoBot."
+                id="gui.extension.aicobot.connectingMessage"
+            />
+        ),
+        helpLink: 'http://www.k-edtech.co.kr'
+    },
+    */
+    {
+        name: 'TM2Scratch',
+        extensionId: 'tm2scratch',
+        collaborator: 'Junilab Inc. and Google',
+        iconURL: tm2scratchIconURL,
+        insetIconURL: tm2scratchInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="TM2Scratch with Scratch 3.0"
+                description="Description for the 'TM2Scratch' extension"
+                id="gui.extension.tm2scratchblocks.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: false,
+        internetConnectionRequired: true,
+    },
+    {
+        name: 'Facemesh2Scratch',
+        extensionId: 'facemesh2scratch',
+        collaborator: 'Junilab Inc. and Google',
+        iconURL: facemesh2scratchIconURL,
+        insetIconURL: facemesh2scratchInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Facemesh2Scratch with Scratch 3.0"
+                description="Description for the 'Facemesh2Scratch' extension"
+                id="gui.extension.facemesh2scratch.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: false,
+        internetConnectionRequired: true,
+    },
+    {
+        name: 'Posenet2Scratch',
+        extensionId: 'posenet2scratch',
+        collaborator: 'Junilab Inc. and Google',
+        iconURL: posenet2scratchIconURL,
+        insetIconURL: posenet2scratchInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Posenet2Scratch with Scratch 3.0"
+                description="Description for the 'Posenet2Scratch' extension"
+                id="gui.extension.posenet2scratchblocks.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: false,
+        internetConnectionRequired: true,
+    },
     {
         name: (
             <FormattedMessage
